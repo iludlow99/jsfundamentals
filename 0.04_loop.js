@@ -27,18 +27,21 @@ i += 10
 console.log(i)
 }
 
-var studentName = "smita"
+
+function capitalize (studentName) {
+
 var newStudentName = ''
 
 for (var l in studentName) {
 	if(l == 0){
 		newStudentName += studentName[0].toUpperCase()
 	} else {
-		newStudentName += studentName[1]
-		newStudentName += studentName[2]
-		newStudentName += studentName[3]
-		newStudentName += studentName[4]
+		newStudentName += studentName[l]
 	}
 }
 
 console.log(newStudentName)
+
+}
+
+capitalize("Isaac")
